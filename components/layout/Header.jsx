@@ -1,7 +1,7 @@
 import ThemeSwitch from '@/components/elements/ThemeSwitch'
 import Link from 'next/link'
-// import OffCanvas from '../OffCanvas'
-// import MobileMenu from '../MobileMenu'
+import MobileMenu from './MobileMenu'
+import OffCanvas from './OffCanvas'
 
 export default function Header({ scroll, isMobileMenu, handleMobileMenu,isOffCanvas, handleOffCanvas }) {
     return (
@@ -14,9 +14,11 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu,isOffCan
 								<i className="ri-menu-2-line" />
 							</a>
 							<div className="container py-3 px-4">
-								<Link className="navbar-brand d-flex main-logo align-items-center" href="/index-2">
+								<Link className="navbar-brand d-flex main-logo align-items-center" href="/">
 									<img src="assets/imgs/home-page-2/template/favicon.svg" alt="zelio" />
-									<span className="fs-4 ms-2">James.dev</span>
+									{/* <img style={{ maxWidth: '20%', height: 'auto' }} src="assets/imgs/home-page-2/template/tanveer.png" alt="zelio" /> */}
+
+									<span className="fs-4 ms-2">tanveer-khan.fi</span>
 								</Link>
 								<div className="d-none d-lg-flex">
 									<div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -33,9 +35,9 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu,isOffCan
 											<li className="nav-item">
 												<Link className="nav-link" href="#portfolio">Portfolio</Link>
 											</li>
-											<li className="nav-item">
+											{/* <li className="nav-item">
 												<Link className="nav-link" href="#blog">Blog</Link>
-											</li>
+											</li> */}
 											<li className="nav-item">
 												<Link className="nav-link" href="#contact">Contact</Link>
 											</li>
@@ -44,16 +46,16 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu,isOffCan
 								</div>
 								<div className="navbar-social d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
 									<div className="d-md-flex d-none gap-3">
-										<Link href="/http://facebook.com">
+										<Link href="https://facebook.com/Shadhin004" target='_blank'>
 											<i className="ri-facebook-circle-fill fs-18" />
 										</Link>
-										<Link href="/http://twitter.com">
+										<Link href="https://x.com/ShadhinKhan004" target='_blank'>
 											<i className="ri-twitter-x-fill fs-18" />
 										</Link>
-										<Link href="/http://linkedin.com">
+										<Link href="https://linkedin.com/in/md-tanveer-khan" target='_blank'>
 											<i className="ri-linkedin-fill fs-18" />
 										</Link>
-										<Link href="/http://github.com">
+										<Link href="https://github.com/Shadhin004" target='_blank'>
 											<i className="ri-github-fill fs-18" />
 										</Link>
 									</div>
@@ -68,8 +70,8 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu,isOffCan
 						</nav>
 					</div>
 					{/* offCanvas-menu */}
-					{/* <OffCanvas isOffCanvas={isOffCanvas} handleOffCanvas={handleOffCanvas} />
-					<MobileMenu isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} /> */}
+					<OffCanvas isOffCanvas={isOffCanvas} handleOffCanvas={handleOffCanvas} />
+					<MobileMenu isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} />
 				</div>
 			</header>
         </>

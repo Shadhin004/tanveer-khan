@@ -15,7 +15,7 @@ export default function Statistic() {
 										<div className="content mx-auto">
 											<i className="ri-shape-line text-primary-2" />
 											<h2 className="text-300 my-0 fs-50">
-												<CountUp className="odometer text-dark fw-medium" enableScrollSpy={true} end={12} />
+												<CountUp className="odometer text-dark fw-medium" enableScrollSpy={true} end={5} />
 												<span className="fs-50 text-300 mb-0">+</span>
 											</h2>
 											<p className="fs-6 mb-0 text-dark">Year Experience</p>
@@ -27,10 +27,10 @@ export default function Statistic() {
 										<div className="content mx-auto">
 											<i className="ri-computer-line text-primary-2" />
 											<h2 className="text-300 my-0 fs-50">
-												<CountUp className="odometer text-dark fw-medium" enableScrollSpy={true} end={250} />
+												<CountUp className="odometer text-dark fw-medium" enableScrollSpy={true} end={10} />
 												<span className="fs-50 text-300 mb-0">+</span>
 											</h2>
-											<p className="fs-6 mb-0 text-dark">Projects Completed</p>
+											<p className="fs-6 mb-0 text-dark">Tech Stack</p>
 										</div>
 									</div>
 								</div>
@@ -39,10 +39,10 @@ export default function Statistic() {
 										<div className="content mx-auto">
 											<i className="ri-service-line text-primary-2" />
 											<h2 className="text-300 my-0 fs-50">
-												<CountUp className="odometer text-dark fw-medium" enableScrollSpy={true} end={680} />
+												<CountUp className="odometer text-dark fw-medium" enableScrollSpy={true} end={4} />
 												<span className="fs-50 text-300 mb-0">+</span>
 											</h2>
-											<p className="fs-6 mb-0 text-dark">Satisfied Clients</p>
+											<p className="fs-6 mb-0 text-dark">Team Experience</p>
 										</div>
 									</div>
 								</div>
@@ -51,7 +51,7 @@ export default function Statistic() {
 										<div className="content mx-auto">
 											<i className="ri-award-line text-primary-2" />
 											<h2 className="text-300 my-0 fs-50">
-												<CountUp className="odometer text-dark fw-medium" enableScrollSpy={true} end={18} />
+												<CountUp className="odometer text-dark fw-medium" enableScrollSpy={true} end={3} />
 												<span className="fs-50 text-300 mb-0">+</span>
 											</h2>
 											<p className="fs-6 mb-0 text-dark">Awards Winner</p>

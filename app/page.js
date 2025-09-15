@@ -23,7 +23,7 @@ export default function HomePage2() {
           <Education />
           <Projects />
           <Skill />
-          <Blog />
+          {/* <Blog /> */}
           <Contact />
         </CustomLayout>
       </>

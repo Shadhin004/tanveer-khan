@@ -9,7 +9,6 @@ import Breadcrumb from './Breadcrumb'
 import MobileMenu from './MobileMenu'
 import Footer from "./Footer"
 import Header from "./Header"
-import WOW from 'wowjs'
 
 
 export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, children }) {
@@ -29,28 +28,34 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
 	const [isOffCanvas, setOffCanvas] = useState(false)
 	const handleOffCanvas = () => setOffCanvas(!isOffCanvas)
 
-// 	useEffect(() => {
-// 		// const WOW = require('wowjs');
-// window.wow = new WOW({
-//     live: false
-// });
+	// useEffect(() => {
+	// 	if (typeof window !== "undefined") {
+	// 		// const WOW = require("wowjs");
+	// 		// new WOW.WOW().init();
+		
 
-// 		// Initialize WOW.js
-// 		window.wow.init()
+	// 	const WOW = require('wowjs');
+	// 		window.wow = new WOW({
+	// 			live: false
+	// 		});
 
-// 		const handleScroll = () => {
-// 			const scrollCheck = window.scrollY > 100
-// 			if (scrollCheck !== scroll) {
-// 				setScroll(scrollCheck)
-// 			}
-// 		}
+	// 	// Initialize WOW.js
+	// 	window.wow.init()
 
-// 		document.addEventListener("scroll", handleScroll)
+	// 	const handleScroll = () => {
+	// 		const scrollCheck = window.scrollY > 100
+	// 		if (scrollCheck !== scroll) {
+	// 			setScroll(scrollCheck)
+	// 		}
+	// 	}
 
-// 		return () => {
-// 			document.removeEventListener("scroll", handleScroll)
-// 		}
-// 	}, [scroll])
+	// 	document.addEventListener("scroll", handleScroll)
+	// }
+
+	// 	return () => {
+	// 		document.removeEventListener("scroll", handleScroll)
+	// 	}
+	// }, [scroll])
 	return (
 		<>
 			<div id="top" />

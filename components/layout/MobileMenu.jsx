@@ -36,9 +36,9 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
 										<li className="nav-item">
 											<Link className="nav-link" href="/pricing">Pricing</Link>
 										</li>
-										<li className="nav-item">
+										{/* <li className="nav-item">
 											<Link className="nav-link" href="/blog-list">Blog</Link>
-										</li>
+										</li> */}
 										<li className="nav-item">
 											<Link className="nav-link" href="/#contact">Contact</Link>
 										</li>

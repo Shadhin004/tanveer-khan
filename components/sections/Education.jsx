@@ -1,4 +1,5 @@
-
+import educationData from "@/lib/education"
+import learningJourney from "@/lib/learning-journey"
 
 export default function Education() {
 	return (
@@ -18,42 +19,26 @@ export default function Education() {
 									</div>
 									<div className="d-flex flex-column h-100 position-relative mt-5">
 										<ul className="ps-3">
-											<li className="position-relative z-1 mb-3">
-												<div className="d-flex gap-2">
-													<p className="text-300 text-nowrap fw-regular mb-0">2020-2024:</p>
-													<div>
-														<span className="text-primary-2">MIT</span>
-														<p className="text-dark">Bachelor’s Degree in Computer Science</p>
-													</div>
-												</div>
-											</li>
-											<li className="position-relative z-1 mb-3">
-												<div className="d-flex gap-2">
-													<p className="text-300 text-nowrap fw-regular mb-0">2018-2019:</p>
-													<div>
-														<span className="text-primary-2">Harvard University</span>
-														<p className="text-dark">Certification in React and Redux, Node.js Developer Course</p>
-													</div>
-												</div>
-											</li>
-											<li className="position-relative z-1 mb-3">
-												<div className="d-flex gap-2">
-													<p className="text-300 text-nowrap fw-regular mb-0">2015-2016:</p>
-													<div>
-														<span className="text-primary-2">Stanford University</span>
-														<p className="text-dark">Certification in Full Stack Web Development</p>
-													</div>
-												</div>
-											</li>
-											<li className="position-relative z-1 mb-3">
-												<div className="d-flex gap-2">
-													<p className="text-300 text-nowrap fw-regular mb-0">2013-2015:</p>
-													<div>
-														<span className="text-primary-2">University of Washington</span>
-														<p className="text-dark">Certification in React and Redux, Node.js Developer Course</p>
-													</div>
-												</div>
-											</li>
+											{
+												educationData.map((education) => (
+													<li key={education.id} className="position-relative z-1 mb-3">
+														<div className="d-flex gap-2">
+															<p className="text-300 text-nowrap fw-regular mb-0">{education.startDate} - {education.endDate}:</p>
+															<div>
+																<span className="text-primary-2">{education.institution}</span>
+																<p className="text-dark">{education.degree}</p>
+																<ul className="mt-1">
+																	{
+																		education.bulletPoints.map((point, index) => (
+																			<li key={index} className="text-dark mb-3" dangerouslySetInnerHTML={{ __html: point }}></li>
+																		))
+																	}
+																</ul>
+															</div>
+														</div>
+													</li>
+												))	
+											}
 										</ul>
 										<div className="line-left position-absolute top-0 border-start z-0" />
 									</div>
@@ -71,33 +56,19 @@ export default function Education() {
 								</div>
 								<div className="d-flex flex-column h-100 position-relative mt-5">
 									<ul className="ps-3">
-										<li className="position-relative z-1 mb-3">
-											<div className="d-flex gap-2">
-												<p className="text-300 text-nowrap fw-regular mb-0">2023-2024:</p>
-												<div>
-													<span className="text-primary-2">Advanced Data Analytics with Big Data Tools</span>
-													<p className="text-dark">Utilized big data tools for advanced analytics and insights.</p>
-												</div>
-											</div>
-										</li>
-										<li className="position-relative z-1 mb-3">
-											<div className="d-flex gap-2">
-												<p className="text-300 text-nowrap fw-regular mb-0">2021-2013:</p>
-												<div>
-													<span className="text-primary-2">Cloud-Native Application Architectures</span>
-													<p className="text-dark">Studied best practices for designing cloud-native applications.</p>
-												</div>
-											</div>
-										</li>
-										<li className="position-relative z-1 mb-3">
-											<div className="d-flex gap-2">
-												<p className="text-300 text-nowrap fw-regular mb-0">2019-2020:</p>
-												<div>
-													<span className="text-primary-2">AI-Driven User Experience Personalization</span>
-													<p className="text-dark">Leveraged AI to personalize user experiences based on behavior.</p>
-												</div>
-											</div>
-										</li>
+										{
+											learningJourney.map((item, index) => (
+												<li key={index} className="position-relative z-1 mb-3">
+													<div className="d-flex gap-2">
+														<p className="text-300 text-nowrap fw-regular mb-0">{item.year}:</p>
+														<div>
+															<span className="text-primary-2">{item.title}</span>
+															<p className="text-dark">{item.description}</p>
+														</div>
+													</div>
+												</li>
+											))
+										}
 									</ul>
 									<div className="line-left position-absolute top-0 border-start z-0" />
 								</div>
