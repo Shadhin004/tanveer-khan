@@ -40,10 +40,10 @@ export const metadata = {
     "JavaScript developer",
   ],
 
-  metadataBase: new URL("https://tanveer-khan.com"),
+  metadataBase: new URL("https://tanveer-khan.fi"),
 
   alternates: {
-    canonical: "https://tanveer-khan.com",
+    canonical: "https://tanveer-khan.fi",
   },
 
   robots: {
@@ -55,11 +55,11 @@ export const metadata = {
 	openGraph: {
     title: "Tanveer Khan - Portfolio",
     description: "Explore the portfolio of Tanveer Khan, a professional web developer.",
-    url: "https://tanveerkhan.com",
+    url: "https://tanveer-khan.fi",
     siteName: "Tanveer Khan",
     images: [
       {
-        url: "https://tanveer-khan.com/preview-tanveer.png", 
+        url: "https://tanveer-khan.fi/preview-tanveer.png", 
         width: 1200,
         height: 630,
         alt: "Tanveer Khan Portfolio",
