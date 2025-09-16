@@ -28,7 +28,45 @@ const dmMono = DM_Mono({
 
 export const metadata = {
 	title: "Tanveer Khan - Portfolio",
-	description: "Tanveer Khan is a professional web developer with over 4 years of experience in creating stunning and functional websites. Explore his portfolio to see his work and get in touch for your next project.",
+	description: "Tanveer Khan is a professional web developer with over 5 years of experience in creating stunning and functional websites. Explore his portfolio to see his work and get in touch for your next project.",
+
+	//for SEO
+	keywords: [
+    "Tanveer Khan",
+    "web developer portfolio",
+    "React.js developer",
+    "Next.js developer",
+    "full stack developer",
+    "JavaScript developer",
+  ],
+
+  metadataBase: new URL("https://tanveer-khan.com"),
+
+  alternates: {
+    canonical: "https://tanveer-khan.com",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+	//for preview card when link is shared on social media
+	openGraph: {
+    title: "Tanveer Khan - Portfolio",
+    description: "Explore the portfolio of Tanveer Khan, a professional web developer.",
+    url: "https://tanveerkhan.com",
+    siteName: "Tanveer Khan",
+    images: [
+      {
+        url: "https://tanveer-khan.com/preview-tanveer.png", 
+        width: 1200,
+        height: 630,
+        alt: "Tanveer Khan Portfolio",
+      },
+    ],
+    type: "website",
+  },
 }
 
 export default function RootLayout({
