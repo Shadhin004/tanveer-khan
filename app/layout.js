@@ -34,6 +34,7 @@ export const metadata = {
 	keywords: [
     "Tanveer Khan",
     "web developer portfolio",
+    "software engineer portfolio",
     "React.js developer",
     "Next.js developer",
     "full stack developer",
