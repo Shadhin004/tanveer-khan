@@ -14,7 +14,7 @@ What I used here:
 - **Styling**: CSS, SCSS, Bootstrap  
 - **Other Tools**: ESLint, next/font, etc.  
 
-## 💻 Getting Started (Run Locally)
+##  Getting Started (Run Locally)
 
 To get a local copy up and running:
 
@@ -62,7 +62,7 @@ This site is ready to be deployed on **www.tanveer-khan.fi**, optimized for perf
 
 I build web applications that are intuitive, accessible, and meaningful. I aim to solve real problems, contribute to open source, and grow continuously as a developer. If my work here resonates with you, I’d love to chat.
 
-## 📫 Get in Touch
+## Get in Touch
 
 - **Email**: shadhin.abc@gmail.com  
 - **LinkedIn**: [linkedin.com/in/md-tanveer-khan](https://linkedin.com/in/md-tanveer-khan)  
