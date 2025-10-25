@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tanveer Khan – Portfolio
 
-## Getting Started
 
-First, run the development server:
+## About Me
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Hi there — I’m **Tanveer**, a software engineer with a passion for building clean, efficient, and scalable web applications. This portfolio showcases the work I’m proud of, the tools I use, and how I solve problems.
+
+
+##  Technologies & Tools
+
+What I used here:
+
+- **Frontend / Frameworks**: Next.js  
+- **Styling**: CSS, SCSS, Bootstrap  
+- **Other Tools**: ESLint, next/font, etc.  
+
+## 💻 Getting Started (Run Locally)
+
+To get a local copy up and running:
+
+1. Clone the repo  
+   ```bash
+   git clone https://github.com/Shadhin004/tanveer-khan.git
+   ```
+
+2. Navigate into the project  
+   ```bash
+   cd tanveer-khan
+   ```
+
+3. Install dependencies  
+   ```bash
+   npm install
+   # or yarn / pnpm
+   ```
+
+4. Run development server  
+   ```bash
+   npm run dev
+   # or yarn dev / pnpm dev
+   ```
+
+5. Open your browser at `http://localhost:3000`
+
+##  Deployment
+
+This site is ready to be deployed on **www.tanveer-khan.fi**, optimized for performance and speed.  
+
+## Repository Structure (Highlights)
+
+```
+├── app/               # Main application (Next.js pages/components)
+├── components/        # Reusable components
+├── lib/               # Utility modules, helpers
+├── public/            # Static assets
+├── styles/            # Global / component-specific styles
+├── .eslintrc          # ESLint configuration
+└── next.config.mjs    # Next.js config
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##  My Mission
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+I build web applications that are intuitive, accessible, and meaningful. I aim to solve real problems, contribute to open source, and grow continuously as a developer. If my work here resonates with you, I’d love to chat.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📫 Get in Touch
 
-## Learn More
+- **Email**: shadhin.abc@gmail.com  
+- **LinkedIn**: [linkedin.com/in/md-tanveer-khan](https://linkedin.com/in/md-tanveer-khan)  
+- **GitHub**: [Shadhin004](https://github.com/Shadhin004)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Thanks for stopping by — I hope you enjoy perusing my code.
